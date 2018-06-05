@@ -3,7 +3,7 @@
 int main (int argc, char *argv[]) {
 
     /*Массив целых. This is an array of integers*/
-    int a[21]= {1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,0};
+    int a[5]= {1,1,1,1,0};
 
     int i = 0;
     int j = 0;
