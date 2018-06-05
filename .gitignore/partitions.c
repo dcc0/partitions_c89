@@ -19,7 +19,6 @@ int main (int argc, char *argv[]) {
     /*Number of objects in array A (at the moment).
     Число объектов (в текущий момент) в массиве А*/
     int x = 0;
-    for (x; a[x] != 0; x++);
 
 
     while (1)
