@@ -50,10 +50,6 @@ int main (int argc, char *argv[]) {
             i++;
         }
         
-        /*Here we count current numbers of elements in A*/
-        /*Здесь мы подсчитываем текущие числа элементов в A*/
-        for (x=0; a[x] != 0; x++);
-
         /*Перенос элемента  "1". Here we transfer "1". */
         a[min_elem]+= 1;
         a[x - 1]-= 1;
