@@ -23,6 +23,9 @@ int main (int argc, char *argv[]) {
 
     while (1)
     {
+         /*Обнулим переменную. Unset min_elem*/
+        min_elem = 0;
+     
         /*Печать и выход. Print end exit*/
         for (j=0; a[j] != 0; j++) printf("%d", a[j]);
         printf("\n");
@@ -69,9 +72,6 @@ int main (int argc, char *argv[]) {
             sum = sum + a[j];
             if (sum == n) a[j+1] = 0;
         }
-
-        /*Обнулим переменную. Unset min_elem*/
-        min_elem = 0;
 
     }
 }
