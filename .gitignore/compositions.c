@@ -9,7 +9,7 @@
         int j = 0;
         int x = 0; //Хранит длину строки. Var to let know length of a string
         int c = 0; //Для обмена. Buffer
-        int reverse_argv[100] = {};
+		int reverse_argv[100] = {};
 
 
         /*Buble sort the array. Упорядочим алфавит*/
@@ -24,10 +24,9 @@
                 }
             }
         }
-        
         /*Here we reverse an array to stop the alorithm later.
          *Перевернем массив, чтобы остановить его позже в цикле*/
-        
+
         i = x - 1;
         while (k < x) {
             reverse_argv[k] = argv[i];
@@ -39,7 +38,7 @@
 
         while (1) {
 
-            for (j = 0; argv[j] != 0; j++) printf("%d", argv[j]);
+            for (j = 0; argv[j] != 0; j++) printf("%d ", argv[j]);
             printf("\n");
 
             for (k = 0; k != x + 1; k++) {
