@@ -27,7 +27,7 @@ int main (int argc, char *argv[]) {
         min_elem = 0;
      
         /*Печать и выход. Print end exit*/
-        for (j=0; a[j] != 0; j++) printf("%d", a[j]);
+        for (j=0; a[j] != 0; j++) printf("%d ", a[j]);
         printf("\n");
         if (a[0] == n) break;
 
