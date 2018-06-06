@@ -1,31 +1,45 @@
 /*Порождение всех разбиений.   Generation of all partitions*/
 #include <stdio.h>
+#include <stdlib.h>
 int main (int argc, char *argv[]) {
 
-    /*Массив целых. This is an array of integers*/
-    int a[5]= {1,1,1,1,0};
-
-    int i = 0;
+	int i = 0;
     int j = 0;
-
     int sum = 0;
     int first_elem = 0;
     int min_elem = 0;
 
+	/*Проверим число аргументов. Here we check a number
+	 * of arguments*/
+	if (argc != 2) {
+		printf("Restart it with an argument\n");
+		return 0;
+	}
+
+	/*String (argument) to integer conversion.
+	 * Конвертируем аргумент (строку) в целое число*/
+	i = atoi(argv[1]);
+	if (i > 99) return 0;
+
+
+   /*Массив целых. This is an array of integers*/
+	int a[100]={};
+	for (j=0; j !=i; j++) a[j]=1;
+	a[j]=0;
+
+
     int n = 0; /*Initial number of objects in array A.
     Число объектов (первоначально) в массиве А*/
     for (n; a[n] != 0; n++);
-    
     /*Number of objects in array A (at the moment).
     Число объектов (в текущий момент) в массиве А*/
     int x = 0;
 
-
-    while (1)
+   while (1)
     {
          /*Обнулим переменную. Unset min_elem*/
         min_elem = 0;
-     
+
         /*Печать и выход. Print end exit*/
         for (j=0; a[j] != 0; j++) printf("%d ", a[j]);
         printf("\n");
@@ -41,7 +55,7 @@ int main (int argc, char *argv[]) {
         for (x=0; a[x] != 0; x++);
         while (i != x -1)
         {
-        
+
             /*Найдем элемент меньше первого. Here we search min. element*/
             if (a[i] < first_elem)
             {
@@ -51,7 +65,7 @@ int main (int argc, char *argv[]) {
 
             i++;
         }
-        
+
         /*Перенос элемента  "1". Here we transfer "1". */
         a[min_elem]+= 1;
         a[x - 1]-= 1;
@@ -75,4 +89,3 @@ int main (int argc, char *argv[]) {
 
     }
 }
-
