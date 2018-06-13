@@ -3,7 +3,7 @@
 #include <stdlib.h>
 int main (int argc, char *argv[]) {
 
-	int i = 0;
+    int i = 0;
     int j = 0;
     int sum = 0;
     int first_elem = 0;
