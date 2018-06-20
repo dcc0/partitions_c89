@@ -33,7 +33,7 @@ int main (int argc, char *argv[]) {
 
     /*Initial number of objects in array A.
     Число объектов (первоначально) в массиве А*/
-    for (n; a[n] != 0; n++);
+    n=j;
     /*Number of objects in array A (at the moment).
     Число объектов (в текущий момент) в массиве А*/
 
